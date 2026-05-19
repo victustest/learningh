@@ -1,8 +1,12 @@
 import React from 'react'
 import Dashboard from './components/Dashboard'
+import Robotix from './components/Robotix'
 const App = () => {
   return (
-    <Dashboard />
+    <div>
+      <Dashboard />
+      <Robotix />
+    </div>
   )
 }
 
