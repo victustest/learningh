@@ -1,6 +1,6 @@
 import React from 'react'
-
- const Robotix = () => {
+import Navbar from '../headers/Navbar'
+ function Robotix() {
   return (
     <div>Robotix</div>
   )
