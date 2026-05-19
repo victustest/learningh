@@ -10,6 +10,7 @@ const App = () => {
         <Route path="/" element={<Dashboard />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/robotix" element={<Robotix />} />
+        <Route path="/math-and-ela" element={<MathAndEla />} />
       </Routes>
     </BrowserRouter>
   )
