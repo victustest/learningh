@@ -1,7 +1,8 @@
 import React from 'react'
 
-export const Robotix = () => {
+ const Robotix = () => {
   return (
     <div>Robotix</div>
   )
 }
+export default Robotix
