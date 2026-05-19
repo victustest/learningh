@@ -1,8 +1,12 @@
 import React from 'react'
+import Navbar from '../headers/Navbar'
 
 const MathAndEla = () => {
   return (
-    <div>MathAndEla</div>
+    <>
+      <Navbar />
+      <div>MathAndEla</div>
+    </>
   )
 }
 
