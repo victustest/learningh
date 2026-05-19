@@ -2,13 +2,15 @@ import React from 'react'
 import Dashboard from './components/Dashboard'
 import Robotix from './components/Robotix'
 import MathAndEla from './components/MathAndEla'
+import { BrowserRouter, Routes, Route } from "react-router";
 const App = () => {
   return (
-    <div>
-      <Dashboard />
-      <Robotix />
-      <MathAndEla />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
