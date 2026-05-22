@@ -1,12 +1,12 @@
 const features = [
     {
-        title: 'Coding Adventures',
+        title: 'Weekly Sessions',
         desc: 'Kids learn coding through fun games, colorful challenges, and interactive lessons.',
         image:
             'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop',
     },
     {
-        title: 'Build Real Robots',
+        title: 'Summer Camps',
         desc: 'Hands-on robotics activities that spark creativity and problem-solving skills.',
         image:
             'https://images.unsplash.com/photo-1535378917042-10a22c95931a?q=80&w=1200&auto=format&fit=crop',
