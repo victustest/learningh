@@ -1,7 +1,14 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
 import Navbar from '../headers/Navbar'
 import features from '../data/Features'
+import CourseOverlay from './CourseOverlay'
+
 function Robotix() {
+  const [open, setOpen] = useState(false)
+  const [selectedFeature, setSelectedFeature] = useState(null)
+
   return (
     <div className="bg-gradient-to-b from-purple-100 via-pink-100 to-yellow-100 min-h-screen">
       <Navbar />
@@ -49,7 +56,13 @@ function Robotix() {
                   {feature.desc}
                 </p>
 
-                <button className="mt-5 bg-yellow-400 hover:bg-yellow-500 text-black px-5 py-2 rounded-full font-semibold transition duration-300">
+                <button
+                  onClick={() => {
+                    setSelectedFeature(feature)
+                    setOpen(true)
+                  }}
+                  className="mt-5 bg-orange-400 hover:bg-yellow-500 text-black px-5 py-2 rounded-full font-semibold transition duration-300"
+                >
                   Learn More
                 </button>
               </div>
@@ -69,6 +82,14 @@ function Robotix() {
           build confidence and future-ready skills in an exciting environment.
         </p>
       </section>
+
+      {/* OVERLAY */}
+      <CourseOverlay
+        isOpen={open}
+        onClose={() => setOpen(false)}
+        title={selectedFeature?.title || "Intro to Robotics"}
+        description={selectedFeature?.desc || "Learn robotics in a fun way!"}
+      />
     </div>
   )
 }
