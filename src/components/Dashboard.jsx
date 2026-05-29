@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Navbar from "../headers/Navbar"
-
 const Dashboard = () => {
     return (
         <div>
