@@ -5,7 +5,12 @@ const Testing = () => {
 
         <div>
             <h1>Counter</h1>
-            <button onClick={()=>setState(counter + 1)}>Click Me</button>
+            <button onClick={()=>{
+                if (counter % 2==0){
+                    console.log(counter)
+                }
+                setState(counter + 1)
+            }>Click Me</button>
             <br></br>
             <button onClick={()=>setState(counter - 1)}>Decrease</button>
             <br></br>
